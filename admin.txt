@@ -1,0 +1,114 @@
+ADMIN
+
+PRODUCTION
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": "*",
+            "Resource": "*",
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "aws-portal:*",
+                "budgets:*",
+                "cloudtrail:*",
+                "config:*",
+                "cur:*",
+                "organizations:*"
+            ],
+            "Resource": "*",
+            "Effect": "Deny"
+        },
+        {
+            "Action": [
+                "iam:CreateUser",
+                "iam:CreateGroup",
+                "iam:DeleteUser",
+                "iam:DeleteGroup",
+                "iam:UpdateUser",
+                "iam:UpdateGroup",
+                "iam:AddUserToGroup",
+                "iam:AttachUserPolicy",
+                "iam:AttachGroupPolicy",
+                "iam:DeleteGroupPolicy",
+                "iam:DeleteUserPolicy",
+                "iam:DetachUserPolicy",
+                "iam:DetachGroupPolicy"
+            ],
+            "Resource": "*",
+            "Effect": "Deny"
+        }
+    ]
+}
+
+UAT
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": "*",
+            "Resource": "*",
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "aws-portal:*",
+                "budgets:*",
+                "cloudtrail:*",
+                "config:*",
+                "cur:*",
+                "organizations:*"
+            ],
+            "Resource": "*",
+            "Effect": "Deny"
+        },
+        {
+            "Action": [
+                "iam:CreateUser",
+                "iam:CreateGroup",
+                "iam:DeleteUser",
+                "iam:DeleteGroup",
+                "iam:UpdateUser",
+                "iam:UpdateGroup",
+                "iam:AddUserToGroup",
+                "iam:AttachUserPolicy",
+                "iam:AttachGroupPolicy",
+                "iam:DeleteGroupPolicy",
+                "iam:DeleteUserPolicy",
+                "iam:DetachUserPolicy",
+                "iam:DetachGroupPolicy"
+            ],
+            "Resource": "*",
+            "Effect": "Deny"
+        }
+    ]
+}
+
+DEVELOPMENT
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": "*",
+            "Resource": "*",
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "aws-portal:*",
+                "budgets:*",
+                "cloudtrail:*",
+                "config:*",
+                "cur:*",
+                "organizations:*"
+            ],
+            "Resource": "*",
+            "Effect": "Deny"
+        }
+    ]
+}
